@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   node-app:
     build: 
@@ -12,5 +12,5 @@ services:
       - NODE_ENV=development
       - MONGO_USER=root
       - MONGO_PASSWORD=root
-
+      - SESSION_SECRET=mysecretsessin
     command: npm run start:watch
