@@ -18,3 +18,8 @@ services:
       - MONGO_PASSWORD=root
       - SESSION_SECRET=mysecretsessin
     command: npm run start:watch
+  
+  mongo:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
